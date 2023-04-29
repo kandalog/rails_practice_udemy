@@ -37,3 +37,4 @@
 /tmp/* 
 \!/log/.keep 
 \!/tmp/.keep
+/script/
