@@ -4,6 +4,10 @@ WORKDIR /myapp
 
 COPY Gemfile* /myapp/
 
+# build-essential provide essential function to build something. ex C Compiler g++
+# You ought install if you wanted to use rbenv
+RUN apt -qq update && apt install -y build-essential mariadb-client
+
 RUN gem update --system && \
     bundle install
 
